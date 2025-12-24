@@ -224,7 +224,7 @@ Webhook (POST) → Respond Immediately ("On it, I'll let you know when ready")
 {
   "parameters": {
     "method": "POST",
-    "url": "http://192.168.86.47:8889:8889/announce",
+    "url": "http://{{CAAL_HOST}}/announce",
     "sendBody": true,
     "specifyBody": "json",
     "jsonBody": "={\"message\": \"Your task is complete.\"}"

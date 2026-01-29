@@ -251,6 +251,7 @@ async def entrypoint(ctx: agents.JobContext) -> None:
             api_key="not-needed",  # Kokoro doesn't require auth
             model=TTS_MODEL,
             voice=runtime["tts_voice"],
+            response_format="wav",
         ),
         vad=silero.VAD.load(),
     )

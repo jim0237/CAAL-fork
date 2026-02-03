@@ -61,7 +61,7 @@ def load_mcp_config() -> list[MCPServerConfig]:
             name="n8n",
             url=n8n_url,
             auth_token=os.environ.get("N8N_MCP_TOKEN"),
-            transport="streamable_http",  # n8n uses /http suffix which needs explicit transport
+            transport="streamable_http",  # n8n uses Streamable HTTP (POST with SSE response)
             timeout=float(os.environ.get("N8N_MCP_TIMEOUT", "10.0")),
         ))
         logger.debug(f"Loaded MCP server config: n8n ({n8n_url})")

@@ -1,7 +1,7 @@
 port: 7880
 log_level: info
 keys:
-  devkey: secret
+  devkey: secretsecretsecretsecretsecretsecret
 
 rtc:
   use_external_ip: false
